@@ -15,7 +15,7 @@ const handleAnalysis = async (formData) => {
   setError(null);
   
   try {
-    const response = await axios.post('http://localhost:3001/analyze', formData, {
+    const response = await axios.post('https://resume-tailoring.onrender.com/analyze', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
